@@ -9,7 +9,7 @@ app.config["DEBUG"] = True
 
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1> Welcome Home </h1>", 200
+    return "<h1> Welcome Home </h1>"
 
 @app.route('/api', methods=['GET'])
 def chat():
