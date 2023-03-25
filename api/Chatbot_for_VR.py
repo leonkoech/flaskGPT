@@ -15,7 +15,4 @@ def chatGPT(input):
   verbose=True,
   llm=OpenAI(temperature=0.9)
   )
-
-  # output1 = conversation.predict(input = input("input here!"))
-  output2 = conversation.predict(input)
-  return output2
+  return conversation.predict(input=input)
