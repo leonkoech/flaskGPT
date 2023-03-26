@@ -1,6 +1,6 @@
 import flask 
 from flask import request, jsonify
-from Chatbot_for_VR import chatGPT
+from api.Chatbot_for_VR import chatGPT
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -20,4 +20,3 @@ def chat(text):
 def page_not_found(e):
     return "<h1>404</h1><p>The resource could not be found.</p>", 404
 
-app.run()
